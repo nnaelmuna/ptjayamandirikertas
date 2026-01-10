@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PT Jaya Mandiri Kertas - Distributor kertas berkualitas tinggi untuk percetakan, kemasan, dan industri di Indonesia." />
+  <meta name="keywords" content="kertas, distributor kertas, kertas HVS, kertas kraft, PT Jaya Mandiri Kertas" />
+  <title>PT Jaya Mandiri Kertas | Distributor Kertas Terpercaya</title>
+
+  <!-- Tailwind CSS (compiled) -->
+  <link rel="stylesheet" href="../css/output.css" />
+
+  <!-- Fonts: Poppins & Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Alpine.js for mobile menu (lightweight interactive JS) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-white">
+  <!-- Header-->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white shadow-sm">
+    <nav class="container mx-auto flex items-center justify-between p-4 lg:px-8" aria-label="Navigasi Utama">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="flex items-center -m-1.5 p-1.5">
+          <img src="../assets/logo_jayamandiri.jpg" alt="Logo PT Jaya Mandiri Kertas" class="h-16 w-auto" />
+          <span class="ml-3 text-xl font-bold text-blue-900 hidden sm:block">Jaya Mandiri Kertas</span>
+        </a>
+      </div>
+
+      <!-- Navbar -->
+      <div class="hidden lg:flex lg:gap-x-10">
+        <a href="#Beranda" class="text-base font-medium text-gray-800 hover:text-blue-900 transition">Beranda</a>
+        <a href="#Katalog" class="text-base font-medium text-gray-800 hover:text-blue-900 transition">Katalog Produk</a>
+        <a href="#Tentang" class="text-base font-medium text-gray-800 hover:text-blue-900 transition">Tentang Kami</a>
+      </div>
+
+      <div class="hidden lg:block">
+        <a href="tel:+6281290359247" class="inline-flex items-center gap-2 rounded-md bg-blue-900 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800 transition">
+          <i class="fas fa-phone"></i> Hubungi Kami
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button type="button" @click="open = !open" aria-label="Buka menu" class="p-2 rounded-md text-gray-700 hover:bg-gray-100">
+          <i x-show="!open" class="fas fa-bars text-xl"></i>
+          <i x-show="open" class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hamburger Navbar -->
+    <div x-data="{ open: false }" x-cloak>
+      <div x-show="open" x-transition class="fixed inset-0 z-40 bg-black/50" @click="open = false"></div>
+      <div x-show="open" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
+           x-transition:leave="transition ease-in duration-200" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"
+           class="fixed inset-y-0 right-0 z-50 w-80 max-w-full bg-white shadow-xl">
+        <div class="flex flex-col h-full">
+          <div class="flex items-center justify-between p-6 border-b">
+            <img src="../assets/logo_jayamandiri.jpg" alt="Logo" class="h-12" />
+            <button @click="open = false" class="p-2 rounded-md hover:bg-gray-100">
+              <i class="fas fa-times text-xl text-gray-600"></i>
+            </button>
+          </div>
+          <nav class="flex-1 px-6 py-6 space-y-4">
+            <a href="#Beranda" @click="open = false" class="block py-3 text-lg font-medium text-gray-800 hover:text-blue-700">Beranda</a>
+            <a href="#Katalog" @click="open = false" class="block py-3 text-lg font-medium text-gray-800 hover:text-blue-700">Katalog Produk</a>
+            <a href="#Tentang" @click="open = false" class="block py-3 text-lg font-medium text-gray-800 hover:text-blue-700">Tentang Kami</a>
+            <a href="tel:+6281290359247" class="block py-3 text-lg font-semibold text-blue-700">
+              <i class="fas fa-phone mr-2"></i> +62 812 9035 9247
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="Beranda" class="relative isolate pt-20 lg:pt-24 overflow-hidden">
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div class="absolute inset-0 dynamic-dots opacity-40"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-white/80 to-amber-50/50"></div>
+    </div>
+
+    <div class="container mx-auto px-6 py-24 sm:py-32 lg:py-40">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-blue-950 sm:text-6xl">
+          Solusi Kertas Berkualitas untuk Kebutuhan Industri Anda
+        </h1>
+        <p class="mt-8 text-lg leading-8 text-gray-700">
+            PT Jaya Mandiri Kertas adalah perusahaan terpercaya yang bergerak di industri kertas dengan spesialisasi produk kertas release paper dan kertas litho paper berkualitas premium. 
+        </p>
+        <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <a href="#katalog" class="rounded-lg bg-blue-200 px-8 py-4 text-lg font-semibold text-blue-900 shadow-lg hover:bg-blue-900 hover:text-white transition">
+            Lihat Katalog Produk
+          </a>
+          <a href="https://wa.me/6281362641199" target="_blank" class="inline-flex items-center gap-3 rounded-lg border-2 border-blue-900 px-8 py-4 text-lg font-medium text-blue-900 hover:bg-blue-50 transition">
+            <i class="fab fa-whatsapp text-2xl"></i> Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .dynamic-dots {
+      /* Menggunakan radial-gradient untuk membuat titik-titik */
+      background-image: radial-gradient(#4c67b1 1px, transparent 2px);
+      background-size: 30px 30px; /* Jarak antar titik */
+      width: 100%;
+      height: 100%;
+      animation: moveDots 20s linear infinite;
+    }
+  
+    @keyframes moveDots {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        /* Menggerakkan background secara diagonal */
+        background-position: 100px 100px;
+      }
+    }
+  
+    /* Optional: Tambahkan efek transisi halus pada tombol */
+    .transition {
+      transition: all 0.s ease;
+    }
+
+    /* Scrolling pages */
+    html {
+    scroll-behavior: smooth;
+  }
+
+  /* Atur jarak scroll agar tidak tertutup navbar */
+  #Beranda, #Katalog, #Tentang {
+    scroll-margin-top: 100px;
+  }
+
+  .dynamic-dots {
+    background-image: radial-gradient(#4c67b1 1px, transparent 2px);
+    background-size: 30px 30px;
+    width: 100%;
+    height: 100%;
+    animation: moveDots 20s linear infinite;
+  }
+
+  @keyframes moveDots {
+    from { background-position: 0 0; }
+    to { background-position: 100px 100px; }
+  }
+
+  /* Memperbaiki typo 0.s menjadi 0.3s */
+  .transition {
+    transition: all 0.3s ease;
+  }
+  </style>
+
+  <!-- Penjelasan Katalog Card Grid -->
+  <div id="Katalog" class="bg-white py-24 sm:py-24">
+    <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
+      <h2 class="text-center text-base/7 font-semibold text-blue-700">Katalog</h2>
+      <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+        Produk Kertas Kami
+      </p>
+  
+      <div class="mt-10 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 lg:gap-8">
+        <!-- Card 1: Kertas Release -->
+        <div class="relative lg:row-span-2">
+          <div class="absolute inset-px rounded-2xl bg-white lg:rounded-l-3xl shadow-md"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-2xl lg:rounded-l-3xl">
+            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Kertas Release</p>
+              <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                Kertas alas untuk stiker, label, dan perekat yang mencegah sisi perekat menempel sebelum digunakan. Juga digunakan untuk kemasan, proses cetak, dan laminasi.
+              </p>
+            </div>
+            <div class="relative flex-1 overflow-hidden pt-4 px-8 pb-8">
+              <img 
+                src="../assets/kertas_release_putih.jpg" 
+                alt="Responsive website mockup on multiple devices" 
+                class="h-56 w-full rounded-lg object-cover shadow-2xl"
+              />
+              <img 
+              src="../assets/kertas_release_biru.jpg" 
+              alt="h-56 w-full rounded-lg object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-2xl shadow-lg ring-1 ring-black/5 lg:rounded-l-3xl"></div>
+        </div>
+  
+        <!-- Card 2: Kustom Ukuran -->
+        <div class="relative max-lg:row-start-1">
+          <div class="absolute inset-px rounded-2xl bg-white max-lg:rounded-t-3xl shadow-md"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-2xl max-lg:rounded-t-3xl">
+            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+              <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Kustom Ukuran</p>
+              <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                Kami menyediakan layanan pemotongan kertas sesuai spesifikasi dan dimensi yang Anda butuhkan dengan presisi tinggi.
+              </p>
+            </div>
+            <div class="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+              <img 
+                src="../assets/kertas_release_50x60.jpg" 
+                alt="Website performance speed optimization dashboard" 
+                class="w-full h-full max-h-52 rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-2xl shadow-lg ring-1 ring-black/5 max-lg:rounded-t-3xl"></div>
+        </div>
+  
+        <!-- Card 3: Kertas Release -->
+        <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+          <div class="absolute inset-px rounded-2xl bg-white shadow-md"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-2xl">
+            <div class="px-8 pt-8 sm:px-10 sm:pt-10">
+              <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Kertas Release</p>
+              <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                Kertas kanji atau kertas release adalah kertas dengan lapisan silikon untuk aplikasi decal. Tersedia dalam ukuran 60x50cm dan 70x50cm.
+              </p>
+            </div>
+            <div class="flex flex-1 items-center justify-center pt-4 px-8 max-lg:py-4 lg:pb-4">
+              <img 
+                src="../assets/kertas_release_70x50.jpg" 
+                alt="Digital security shield with lock icon" 
+                class="h-full max-h-52 rounded-lg object-contain shadow-xl"
+              />
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-2xl shadow-lg ring-1 ring-black/5"></div>
+        </div>
+  
+        <!-- Card 4: Kertas Lito/Mg -->
+        <div class="relative lg:row-span-2">
+          <div class="absolute inset-px rounded-2xl bg-white max-lg:rounded-b-3xl lg:rounded-r-3xl shadow-md"></div>
+          <div class="relative flex h-full flex-col overflow-hidden rounded-2xl max-lg:rounded-b-3xl lg:rounded-r-3xl">
+            <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+              <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Kertas Lito/MG Putih</p>
+              <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                Kertas tipis 28-40 GSM dengan satu sisi mengkilap (glazed) dan satu sisi buram. Aman untuk kontak makanan, biasa digunakan untuk pembungkus tusuk gigi, sedotan, dan kemasan food grade lainnya.
+              </p>
+            </div>
+            <div class="relative flex-1 overflow-hidden pt-4 px-8 pb-8">
+              <img 
+                src="../assets/kertas_lito_putih.jpg" 
+                alt="Developer API dashboard and code integration interface" 
+                class="h-full w-full rounded-lg object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-px rounded-2xl shadow-lg ring-1 ring-black/5 max-lg:rounded-b-3xl lg:rounded-r-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Katalog Product -->
+  <section class="py-16 bg-blue-100">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Product 1: Kertas Release Putih -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <!-- Gambar -->
+          <div class="overflow-hidden">
+            <img 
+              src="../assets/kertas_release_putih.jpg" 
+              alt="Kertas Release Putih - Roll kertas silicone putih berkualitas" 
+              class="w-full h-68 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+  
+          <!-- Deskripsi + Tombol -->
+          <div class="flex flex-col flex-1">
+            <!-- Nama Produk (dengan padding) -->
+            <div class="px-6 pt-6 pb-8 text-center">
+              <h4 class="text-lg font-semibold text-gray-900">
+                Kertas Release Putih
+              </h4>
+              <h4 class="text-sm font-light text-gray-400 pt-2">
+                Ukuran Kertas: 17,5 cm | 40 gsm
+              </h4>
+            </div>
+  
+            <!-- Tombol Full Width (tanpa padding samping, menyambung ke card) -->
+            <a 
+              href="#" 
+              class="mt-auto block w-full py-3 text-center text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 transition duration-300 rounded-b-lg"
+            >
+              Selengkapnya
+            </a>
+          </div>
+        </div>
+  
+        <!-- Product 2: Kertas Lito Putih -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <div class="overflow-hidden">
+            <img 
+              src="../assets/kertas_lito_putih.jpg" 
+              alt="Kertas Lito Putih - Roll kertas lito untuk berbagai keperluan" 
+              class="w-full h-68 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+  
+          <div class="flex flex-col flex-1">
+            <div class="px-6 pt-6 pb-8 text-center">
+              <h4 class="text-lg font-semibold text-gray-900">
+                Kertas Lito Putih
+              </h4>
+              <h4 class="text-sm font-light text-gray-400 pt-2">
+                Ketebalan Kertas: 28/40 gsm
+              </h4>
+            </div>
+  
+            <a 
+              href="#" 
+              class="mt-auto block w-full py-3 text-center text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 transition duration-300 rounded-b-lg"
+            >
+              Selengkapnya
+            </a>
+          </div>
+        </div>
+  
+        <!-- Product 3: Kertas Release Biru -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <div class="overflow-hidden">
+            <img 
+              src="../assets/kertas_release_biru.jpg" 
+              alt="Kertas Release Biru - Roll kertas silicone biru premium" 
+              class="w-full h-68 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+  
+          <div class="flex flex-col flex-1">
+            <div class="px-6 pt-6 pb-8 text-center">
+              <h4 class="text-lg font-semibold text-gray-900">
+                Kertas Release Biru
+              </h4>
+              <h4 class="text-sm font-light text-gray-400 pt-2">
+                Ukuran Kertas: 17,5 cm | 55 gsm
+              </h4>
+            </div>
+  
+            <a 
+              href="#" 
+              class="mt-auto block w-full py-3 text-center text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 transition duration-300 rounded-b-lg"
+            >
+              Selengkapnya
+            </a>
+          </div>
+        </div>
+  
+        <!-- Product 4: Kertas Release 50x60 -->
+        <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+          <div class="overflow-hidden">
+            <img 
+              src="../assets/kertas_release_50x60.jpg" 
+              alt="Kertas Release Size 50x60 - Lembaran kertas release ukuran khusus" 
+              class="w-full h-68 object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+  
+          <div class="flex flex-col flex-1">
+            <div class="px-6 pt-6 pb-8 text-center">
+              <h4 class="text-lg font-semibold text-gray-900">
+                Kertas Release
+              </h4>
+              <h4 class="text-sm font-light text-gray-400 pt-2">
+                Ukuran Kertas: 50x60 cm
+              </h4>
+            </div>
+  
+            <a 
+              href="#" 
+              class="mt-auto block w-full py-3 text-center text-sm font-medium text-white bg-blue-900 hover:bg-blue-800 transition duration-300 rounded-b-lg"
+            >
+              Selengkapnya
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan Kami Section -->
+  <section id="Tentang" class="py-24 bg-white">
+    <div class="container mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-blue-950 sm:text-4xl">Mengapa Memilih Kami?</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+            Memilih supplier yang tepat adalah kunci kesuksesan bisnis Anda. 
+            Kami hadir sebagai mitra terpercaya yang menyediakan solusi komprehensif untuk kebutuhan kertas industri dengan komitmen pada kualitas dan kepuasan pelanggan.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-blue-100 text-blue-700">
+            <i class="fas fa-boxes text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900">Produk Lengkap</h3>
+          <p class="mt-3 text-gray-600">Berbagai jenis dan ukuran kertas untuk semua kebutuhan industri</p>
+        </div>
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-blue-100 text-blue-700">
+            <i class="fas fa-tags text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900">Harga Kompetitif</h3>
+          <p class="mt-3 text-gray-600">Harga grosir terbaik langsung dari distributor resmi</p>
+        </div>
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-blue-100 text-blue-700">
+            <i class="fas fa-truck text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900">Pengiriman Cepat</h3>
+          <p class="mt-3 text-gray-600">Distribusi cepat ke seluruh pulau Jawa dan luar Jawa</p>
+        </div>
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-blue-100 text-blue-700">
+            <i class="fas fa-headset text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900">Layanan Terbaik</h3>
+          <p class="mt-3 text-gray-600">Tim support siap membantu Anda kapan saja</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (simple) -->
+  <footer class="bg-blue-900 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg font-semibold">PT Jaya Mandiri Kertas</p>
+      <p class="mt-2">Kp Nagrog rt007/003, Pudar, Kec. Pamarayan, Kabupaten Serang, Banten 42176</p>
+      <p class="mt-1">Telp: 0812-9035-9247 | WA: 0813-6264-1199</p>
+      <p class="mt-4 text-blue-200">&copy; 2026 PT Jaya Mandiri Kertas. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
