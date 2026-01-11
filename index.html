@@ -9,15 +9,12 @@
 
   <!-- Tailwind CSS (compiled) -->
   <link rel="stylesheet" href="../css/output.css" />
-
   <!-- Fonts: Poppins & Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <!-- Alpine.js for mobile menu (lightweight interactive JS) -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -38,10 +35,16 @@
         </button>
       </div>
       
-      <div class="hidden lg:flex lg:gap-x-8">
-          <a href="#Beranda" class="text-sm font-medium text-gray-800">Beranda</a>
-          <a href="#Katalog" class="text-sm font-medium text-gray-800">Katalog Produk</a>
-          <a href="#Tentang" class="text-sm font-medium text-gray-800">Tentang Kami</a>
+      <div class="hidden lg:flex lg:gap-x-10">
+        <a href="#Beranda" class="text-sm font-medium text-gray-800 hover:text-blue-900 transition">Beranda</a>
+        <a href="#Katalog" class="text-sm font-medium text-gray-800 hover:text-blue-900 transition">Katalog Produk</a>
+        <a href="#Tentang" class="text-sm font-medium text-gray-800 hover:text-blue-900 transition">Tentang Kami</a>
+      </div>
+
+      <div class="hidden lg:block">
+        <a href="tel:+6281362641199" class="inline-flex items-center gap-2 rounded-md bg-blue-900 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800 transition">
+        <i class="fas fa-phone"></i> Hubungi Kami
+        </a>
       </div>
     </nav>
   
@@ -62,7 +65,7 @@
         
         <div class="border-t border-gray-100 pt-2">
           <a href="tel:+6281290359247" class="flex items-center gap-2 text-blue-900 font-bold">
-            <i class="fas fa-phone"></i> +62 812 9035 9247
+            <i class="fas fa-phone"></i> +62 813 6264 1199
           </a>
         </div>
       </nav>
@@ -70,12 +73,10 @@
   </header>
   
   <style>
-    /* Mencegah menu muncul sekilas saat refresh halaman */
     [x-cloak] { display: none !important; }
     
     html { scroll-behavior: smooth; }
     
-    /* Offset agar section tidak tertutup navbar */
     #Beranda, #Katalog, #Tentang {
       scroll-margin-top: 80px;
     }
@@ -110,9 +111,8 @@
 
   <style>
     .dynamic-dots {
-      /* Menggunakan radial-gradient untuk membuat titik-titik */
       background-image: radial-gradient(#4c67b1 1px, transparent 2px);
-      background-size: 30px 30px; /* Jarak antar titik */
+      background-size: 30px 30px;
       width: 100%;
       height: 100%;
       animation: moveDots 20s linear infinite;
@@ -434,13 +434,12 @@
     </div>
   </section>
 
-  <!-- Footer (simple) -->
+  <!-- Footer -->
   <footer class="bg-blue-900 text-white py-12">
     <div class="container mx-auto px-6 text-center">
       <p class="text-lg font-semibold">PT Jaya Mandiri Kertas</p>
       <p class="mt-2">Kp Nagrog rt008/003, Pudar, Kec. Pamarayan, Kabupaten Serang, Banten 42176</p>
-      <p class="mt-1">Telp: 0812-9035-9247 | WA: 0813-6264-1199</p>
-      <p class="mt-1">Email: </p>
+      <p class="mt-1">Email: bp.mumu99@gmail.com | WhatsApp: 0813-6264-1199</p>
       <p class="mt-4 text-blue-200">&copy; 2026 PT Jaya Mandiri Kertas. All rights reserved.</p>
     </div>
   </footer>
